@@ -8,7 +8,7 @@ import {
   CheckCircle,
   Circle,
 } from 'lucide-react';
-import AllSkills from '../../components/AllSkills';
+
 import { allSkills } from '../../components/AllSkills';
 import Skill from '../../components/Skill';
 

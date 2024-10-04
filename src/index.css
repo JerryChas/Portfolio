@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #262e34;
+  --color-secondary: #4c5154;
+  --color-accent: #b45515;
+  --color-background: #141414;
+  --color-text: #afc1cc;
+}
+
+/* html,
+body,
+#root {
+  min-height: 100svh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+} */
+
+body {
+  display: flex;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}

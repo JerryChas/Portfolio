@@ -71,7 +71,7 @@ const courses = [
   },
   {
     title: 'Cloud, CI/CD and Work Methodology',
-    points: 25,
+    points: 20,
     startDate: 'Oct 21, 2024',
     endDate: 'Nov 17, 2024',
     completed: false,

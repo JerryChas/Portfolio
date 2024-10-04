@@ -2,7 +2,7 @@
   {
     "title": "Kanban Board",
     "description": "My first React-project. A Kanban board built with React",
-    "src": "src/assets/project-images/kanban.jpg",
+    "src": "./src/assets/project-images/kanban.jpg",
     "alt": "Weather App project image",
     "repoURL": "https://github.com/JerryChas/Kanbanboard",
     "pageURL": "https://kan-banne-board.netlify.app",

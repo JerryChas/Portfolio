@@ -2,7 +2,7 @@
   {
     "title": "Kanban Board",
     "description": "My first React-project. A Kanban board built with React",
-    "src": "/assets/project-images/kanban.jpg",
+    "src": "/project-images/kanban.jpg",
     "alt": "Kanban board",
     "repoURL": "https://github.com/JerryChas/Kanbanboard",
     "pageURL": "https://kan-banne-board.netlify.app",
@@ -16,7 +16,7 @@
   {
     "title": "The Dashboard",
     "description": "A dashboard full of different APIs. Built with Vanilla JS.",
-    "src": "src/assets/project-images/Dashboard.jpeg",
+    "src": "project-images/Dashboard.jpeg",
     "alt": "Todo List project image",
     "repoURL": "https://github.com/JerryChas/The-Dashboard",
     "pageURL": "https://my-chas-dashboard.netlify.app",
@@ -29,7 +29,7 @@
   {
     "title": "Mortgage calculator",
     "description": "A mortgage calculator built with Vanilla TS.",
-    "src": "src/assets/project-images/Mortgage_calculator.jpeg",
+    "src": "/public/project-images/Mortgage_calculator.jpeg",
     "alt": "E-commerce Store project image",
     "repoURL": "https://github.com/JerryChas/Labb_TypeScript---bol-nekalkylatorn",
     "pageURL": "https://jerrychas.github.io/Labb_TypeScript---bol-nekalkylatorn",
@@ -42,7 +42,7 @@
   {
     "title": "Rock Paper Scissors",
     "description": "A simple Rock Paper Scissors game built with Vanilla JS.",
-    "src": "src/assets/project-images/Rock_Paper_Scissors.jpeg",
+    "src": "public/project-images/Rock_Paper_Scissors.jpeg",
     "alt": "Portfolio project image",
     "repoURL": "https://github.com/JerryChas/Rock-paper-scissor",
     "pageURL": "https://jerrychas.github.io/Rock-paper-scissor",
@@ -55,7 +55,7 @@
   {
     "title": "My first Portfolio",
     "description": "My first portfolio website built with HTML and Vanilla JS",
-    "src": "src/assets/project-images/first_portfolio.jpg",
+    "src": "public/project-images/first_portfolio.jpg",
     "alt": "Chat Application project image",
     "repoURL": "https://github.com/JerryChas/Uppgift-2---Dynamisk-sida",
     "pageURL": "https://jerrychas.github.io/Uppgift-2---Dynamisk-sida",

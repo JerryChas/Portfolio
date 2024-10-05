@@ -113,6 +113,7 @@ const AboutPage = () => {
       </header>
 
       <main>
+        {/* ABOUT ME */}
         <section className='p-6 mb-6 rounded-lg shadow-md bg-primary'>
           <h2 className='flex items-center mb-4 text-2xl font-semibold text-accent'>
             <User className='mr-2 text-accent' /> About Me
@@ -130,14 +131,15 @@ const AboutPage = () => {
           </p>
         </section>
 
+        {/* SKILLS */}
         <section className='p-6 mb-6 rounded-lg shadow-md bg-primary'>
           <h2 className='flex items-center mb-4 text-2xl font-semibold text-accent'>
             <Code className='mr-2 text-accent' /> Skills
           </h2>
           <ul className='grid grid-cols-2 gap-4'>
             {allSkills.map((skill) => (
-              <li className='flex p-2 rounded bg-background text-text'>
-                <div className='flex justify-center w-5 mx-2'>
+              <li className='flex p-2 text-sm rounded bg-background text-text'>
+                <div className='flex justify-center w-5 mx-2 shrink-0'>
                   <Skill skill={skill} />
                 </div>
                 {skill}
@@ -146,6 +148,7 @@ const AboutPage = () => {
           </ul>
         </section>
 
+        {/* EDUCATION */}
         <section className='p-6 mb-6 rounded-lg shadow-md bg-primary'>
           <h2 className='flex items-center mb-4 text-2xl font-semibold text-accent'>
             <GraduationCap className='mr-2 text-accent' /> Education

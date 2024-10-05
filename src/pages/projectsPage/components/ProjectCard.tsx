@@ -24,6 +24,7 @@ const ProjectCard = ({ data, even }: ProjectCardProps) => {
       {/* Picture */}
       <div className='border-b w-36 md:w-60 h-36 md:h-60 aspect-square'>
         <img
+          loading='lazy'
           src={data.src}
           alt={data.alt}
           className='w-full h-full object-cover'

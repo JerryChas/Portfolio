@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <>
       <div className='flex flex-col place-content-evenly h-full'>
-        <div className='shadow-gray-900 shadow-md mx-auto px-4 py-8 rounded-lg container'>
+        <div className='shadow-gray-900 mx-auto px-4 py-8 rounded-lg w-full'>
           <div className='flex md:flex-row flex-col items-center'>
             <div className='mb-2 md:mb-0 md:w-1/2'>
               <img

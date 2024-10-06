@@ -11,7 +11,8 @@
       "react",
       "javascript"
     ],
-    "category": "school project"
+    "category": "school project",
+    "role": "Solo project"
   },
   {
     "title": "The Dashboard",
@@ -24,7 +25,8 @@
     "tools": [
       "javascript"
     ],
-    "category": "school project"
+    "category": "school project",
+    "role": "Solo project"
   },
   {
     "title": "Mortgage calculator",
@@ -37,7 +39,8 @@
     "tools": [
       "typescript"
     ],
-    "category": "side project"
+    "category": "side project",
+    "role": "Solo project"
   },
   {
     "title": "Rock Paper Scissors",
@@ -50,7 +53,8 @@
     "tools": [
       "javascript"
     ],
-    "category": "school project"
+    "category": "school project",
+    "role": "Solo project"
   },
   {
     "title": "My first Portfolio",
@@ -64,6 +68,7 @@
       "html",
       "javascript"
     ],
-    "category": "school project"
+    "category": "school project",
+    "role": "Solo project"
   }
 ]

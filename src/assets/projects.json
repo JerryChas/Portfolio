@@ -1,5 +1,39 @@
 [
   {
+    "title": "Glossy",
+    "description": "Glossy is a fullstack app designed to help users add and practice English-Swedish vocabulary in various ways. It's a side project I'm building for my daughter to help her practice English",
+    "src": "project-images/glossy.jpg",
+    "alt": "glossy",
+    "repoURL": "#",
+    "pageURL": "#",
+    "status": "incomplete",
+    "tools": [
+      "javascript",
+      "react",
+      "node",
+      "express",
+      "mongodb",
+      "tailwind"
+    ],
+    "category": "side project",
+    "role": "Solo project"
+  },
+  {
+    "title": "Aurora Agile",
+    "description": "Our team built a Kanban board for task planning during our 'Project Methodology and Agile Methods' course, focusing on pull requests and collaborative workflows",
+    "src": "project-images/aurora.png",
+    "alt": "Aurora agile",
+    "repoURL": "https://github.com/JerryChas/Aurora-Agile",
+    "pageURL": "https://auroraagile.netlify.app/",
+    "status": "complete",
+    "tools": [
+      "javascript",
+      "react"
+    ],
+    "category": "school project",
+    "role": "Collaborative project"
+  },
+  {
     "title": "Kanban Board",
     "description": "My first React-project. A Kanban board built with React",
     "src": "project-images/kanban.jpg",
@@ -8,11 +42,25 @@
     "pageURL": "https://kan-banne-board.netlify.app",
     "status": "complete",
     "tools": [
-      "react",
-      "javascript"
+      "javascript",
+      "react"
     ],
     "category": "school project",
     "role": "Solo project"
+  },
+  {
+    "title": "Quire",
+    "description": "An app where you can create and keep your notes. Developed by my team and myself in Vanilla JS",
+    "src": "project-images/quire.jpeg",
+    "alt": "quire",
+    "repoURL": "https://github.com/JerryChas/Quire",
+    "pageURL": "https://quire-norrland.netlify.app/",
+    "status": "complete",
+    "tools": [
+      "javascript"
+    ],
+    "category": "school project",
+    "role": "Collaborative project"
   },
   {
     "title": "The Dashboard",

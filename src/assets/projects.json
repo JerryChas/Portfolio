@@ -1,5 +1,21 @@
 [
   {
+    "title": "This Portfolio",
+    "description": "Yes, you're already here! This is the very portfolio you're browsing right now. A meta-project built with React and Tailwind, showcasing my other projects",
+    "src": "project-images/this_portfolio.jpeg",
+    "alt": "Portfolio",
+    "repoURL": "https://github.com/JerryChas/Portfolio",
+    "pageURL": "/",
+    "status": "complete",
+    "tools": [
+      "javascript",
+      "react",
+      "tailwind"
+    ],
+    "category": "side project",
+    "role": "Solo project"
+  },
+  {
     "title": "Glossy",
     "description": "Glossy is a fullstack app designed to help users add and practice English-Swedish vocabulary in various ways. It's a side project I'm building for my daughter to help her practice English",
     "src": "project-images/glossy.jpg",

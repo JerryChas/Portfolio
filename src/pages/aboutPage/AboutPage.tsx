@@ -137,8 +137,11 @@ const AboutPage = () => {
             <Code className='mr-2 text-accent' /> Skills
           </h2>
           <ul className='grid grid-cols-2 gap-4'>
-            {allSkills.map((skill) => (
-              <li className='flex p-2 text-sm rounded bg-background text-text'>
+            {allSkills.map((skill, index) => (
+              <li
+                key={index}
+                className='flex p-2 text-sm rounded bg-background text-text'
+              >
                 <div className='flex justify-center w-5 mx-2 shrink-0'>
                   <Skill skill={skill} />
                 </div>

@@ -29,12 +29,12 @@ const ProjectCard = ({ data, even }: ProjectCardProps) => {
         }  shadow-md shadow-primary hover:shadow-md hover:shadow-accent mx-auto my-6 rounded-lg w-full md:max-w-screen-md h-36 md:h-auto transition-transform duration-300 overflow-hidden ease-in-out hover:scale-105`}
       >
         {/* Picture */}
-        <div className='border-b w-36 md:w-60 h-36 md:h-60 aspect-square'>
+        <div className='w-36 md:w-60 h-36 md:h-60 aspect-square'>
           <img
             loading='lazy'
             src={data.src}
             alt={data.alt}
-            className='w-full h-full object-cover'
+            className='w-full h-full object-cover object-fill'
           />
         </div>
 

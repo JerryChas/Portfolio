@@ -3,6 +3,8 @@ import { ProjectModalProps } from '../types/projectTypes';
 import { Globe, X, Code } from 'lucide-react';
 
 const ProjectModal = ({ data, toggleModal, isOpen }: ProjectModalProps) => {
+  const incomplete: boolean = data.status === 'incomplete';
+
   return (
     // OVERLAY
     <div
@@ -14,10 +16,18 @@ const ProjectModal = ({ data, toggleModal, isOpen }: ProjectModalProps) => {
       {/* MODAL-CONTAINER */}
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`z-50 bg-background shadow-md shadow-slate-800 p-6 rounded-lg w-svw max-w-3xl 
+        className={`overflow-hidden z-50 bg-background shadow-md shadow-slate-800 p-6 rounded-lg w-svw max-w-3xl  
             transform transition-transform duration-300 ease-in-out delay-1000 
             ${isOpen ? 'scale-100' : 'scale-0'}`}
       >
+        {/* BANNER (incomplete) */}
+        {incomplete && (
+          <img
+            className='top-7 left-0 z-50 absolute hover:opacity-15 drop-shadow-md transition-opacity rotate-6'
+            src='under_construction.png'
+            alt='under contruction'
+          />
+        )}
         {/* HEADER */}
         <div className='flex justify-between items-center mb-4'>
           {/* Title */}
@@ -33,7 +43,7 @@ const ProjectModal = ({ data, toggleModal, isOpen }: ProjectModalProps) => {
           <img
             src={data.src}
             alt={data.alt}
-            className='mx-auto md:mx-0 rounded-lg w-full max-w-xs'
+            className='mx-auto md:mx-0 rounded-lg w-full max-w-xs aspect-square'
           />
           {/* DETAILS */}
           <div className='flex flex-col justify-between gap-2 px-2 w-full'>
@@ -56,20 +66,27 @@ const ProjectModal = ({ data, toggleModal, isOpen }: ProjectModalProps) => {
         {/* FOOTER */}
         <div className='flex justify-around mt-6'>
           <a
-            href={data.repoURL}
-            target='_blank'
+            href={incomplete ? undefined : data.repoURL} // Set href to '#' if incomplete
+            target={incomplete ? undefined : '_blank'}
             rel='noopener noreferrer'
             title='Github Repository'
-            className='flex items-center gap-2 bg-accent px-4 py-2 rounded-md text-text'
+            className={`bg-accent flex items-center gap-2 px-4 py-2 rounded-md text-text ${
+              incomplete && 'opacity-30 cursor-not-allowed'
+            }`}
+            onClick={(e) => incomplete && e.preventDefault()}
           >
             <Code /> View Code
           </a>
+
           <a
-            href={data.pageURL}
-            target='_blank'
+            href={incomplete ? undefined : data.pageURL}
+            target={incomplete ? undefined : '_blank'}
             rel='noopener noreferrer'
             title='Visit Project Page'
-            className='flex items-center gap-2 bg-accent px-4 py-2 rounded-md text-text'
+            className={`bg-accent flex items-center gap-2 px-4 py-2 rounded-md text-text ${
+              incomplete && 'opacity-30 cursor-not-allowed'
+            }`}
+            onClick={(e) => incomplete && e.preventDefault()}
           >
             <Globe /> Visit Page
           </a>

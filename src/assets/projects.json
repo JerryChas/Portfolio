@@ -8,7 +8,7 @@
     "pageURL": "/",
     "status": "complete",
     "tools": [
-      "javascript",
+      "typescript",
       "react",
       "tailwind"
     ],

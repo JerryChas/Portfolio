@@ -122,6 +122,15 @@ const completedPoints = courses
 const AboutPage = () => {
   return (
     <div className='max-w-4xl p-6 mx-auto bg-background text-text'>
+      {/* <div style={{ width: '100%', height: '500px' }}>
+        <iframe
+          src='/cv.pdf'
+          width='100%'
+          height='100%'
+          title='CV - Jerry Olsson'
+        ></iframe>
+      </div> */}
+
       <header className='mb-8 text-center'>
         <h1 className='mb-2 text-3xl font-bold text-accent'>Jerry Olsson</h1>
         <p className='text-xl text-secondary'>Software Developer Student</p>
@@ -144,6 +153,17 @@ const AboutPage = () => {
             learning new things and grows with challenges. I'm excited about
             growing further and contributing wherever I can.
           </p>
+
+          <div className='flex justify-end mt-2'>
+            <a
+              className='italic animate-pulse md:hover:scale-105 md:hover:animate-none'
+              href='/cv.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Check out my CV
+            </a>
+          </div>
         </section>
 
         {/* SKILLS */}
@@ -216,15 +236,26 @@ const AboutPage = () => {
           Get in Touch
         </h2>
         <div className='flex justify-center space-x-4'>
-          <a href='mailto:jerryroyolsson@gmail.com' className='text-text'>
+          {/* Email */}
+          <a
+            href='mailto:jerryroyolsson@gmail.com'
+            className='transition-colors duration-200 text-text hover:text-red-500'
+          >
             <Mail size={24} />
           </a>
-          <a href='https://github.com/JerryChas/' className='text-text'>
+
+          {/* GitHub */}
+          <a
+            href='https://github.com/JerryChas/'
+            className='transition-colors duration-200 text-text hover:text-gray-700'
+          >
             <Code2 size={24} />
           </a>
+
+          {/* LinkedIn */}
           <a
             href='https://www.linkedin.com/in/jerry-olsson-0b1a4228b/'
-            className=' text-text'
+            className='transition-colors duration-200 text-text hover:text-blue-600'
           >
             <Linkedin size={24} />
           </a>

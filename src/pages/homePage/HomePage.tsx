@@ -37,7 +37,9 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <AllSkills />
+        <div className='hidden md:block'>
+          <AllSkills />
+        </div>
       </div>
     </>
   );

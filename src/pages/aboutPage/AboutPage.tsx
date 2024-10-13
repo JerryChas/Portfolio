@@ -7,101 +7,116 @@ import {
   Linkedin,
   CheckCircle,
   Circle,
+  CircleDot,
 } from 'lucide-react';
 
 import { allSkills } from '../../components/AllSkills';
 import Skill from '../../components/Skill';
 
+const courseStatusIcon = (status: string) => {
+  switch (status) {
+    case 'complete':
+      return <CheckCircle className='w-6 h-6 mr-2 text-green-500 shrink-0' />;
+    case 'ongoing':
+      return (
+        <CircleDot className='w-6 h-6 mr-2 text-accent shrink-0 animate-pulse' />
+      );
+    case 'upcoming':
+      return <Circle className='w-6 h-6 mr-2 text-gray-500 shrink-0' />;
+    default:
+      break;
+  }
+};
 const courses = [
   {
     title: 'IT Tech and Operations',
     points: 10,
     startDate: 'Sep 4, 2023',
     endDate: 'Sep 17, 2023',
-    completed: true,
+    status: 'complete',
   },
   {
     title: 'Web Development and Web Technology',
     points: 55,
     startDate: 'Sep 18, 2023',
     endDate: 'Dec 3, 2023',
-    completed: true,
+    status: 'complete',
   },
   {
     title: 'Advanced Frontend Development and TypeScript',
     points: 40,
     startDate: 'Dec 4, 2023',
     endDate: 'Feb 18, 2024',
-    completed: true,
+    status: 'complete',
   },
   {
     title: 'Project Methodology and Agile Methods',
     points: 15,
     startDate: 'Jan 8, 2024',
     endDate: 'Feb 18, 2024',
-    completed: true,
+    status: 'complete',
   },
   {
     title: 'UX, Usability and Accessibility',
     points: 15,
     startDate: 'Feb 19, 2024',
     endDate: 'Mar 10, 2024',
-    completed: true,
+    status: 'complete',
   },
   {
     title: 'React',
     points: 45,
     startDate: 'Mar 4, 2024',
     endDate: 'May 12, 2024',
-    completed: true,
+    status: 'complete',
   },
   {
     title: 'Backend Development and APIs',
     points: 60,
     startDate: 'May 13, 2024',
     endDate: 'Sep 29, 2024',
-    completed: true,
+    status: 'complete',
   },
   {
     title: 'AI in Fullstack Development',
     points: 15,
     startDate: 'Sep 30, 2024',
     endDate: 'Oct 20, 2024',
-    completed: false,
+    status: 'ongoing',
   },
   {
     title: 'Cloud, CI/CD and Work Methodology',
     points: 20,
     startDate: 'Oct 21, 2024',
     endDate: 'Nov 17, 2024',
-    completed: false,
+    status: 'upcoming',
   },
   {
     title: 'Vue.js',
     points: 25,
     startDate: 'Nov 18, 2024',
     endDate: 'Dec 22, 2024',
-    completed: false,
+    status: 'upcoming',
   },
   {
     title: 'Internship (LIA)',
     points: 110,
     startDate: 'Dec 23, 2024',
     endDate: 'May 25, 2025',
-    completed: false,
+    status: 'upcoming',
   },
   {
     title: 'Thesis Project',
     points: 20,
     startDate: 'May 26, 2025',
     endDate: 'Jun 22, 2025',
-    completed: false,
+    status: 'upcoming',
   },
 ];
 
 const totalPoints = courses.reduce((sum, course) => sum + course.points, 0);
 const completedPoints = courses
-  .filter((course) => course.completed)
+  .filter((course) => course.status === 'complete')
   .reduce((sum, course) => sum + course.points, 0);
 
 const AboutPage = () => {
@@ -173,22 +188,20 @@ const AboutPage = () => {
               </div>
               <ul className='mt-4'>
                 {courses.map((course, index) => (
-                  <li key={index} className='flex mb-2'>
-                    {course.completed ? (
-                      <CheckCircle className='w-6 h-6 mr-2 text-green-500 shrink-0' />
-                    ) : (
-                      <Circle className='w-6 h-6 mr-2 text-gray-500 shrink-0' />
-                    )}
-                    <div className='flex-1'>
+                  <li key={index} className='flex mb-2 group'>
+                    {/* Status Icon */}
+                    <div>{courseStatusIcon(course.status)}</div>
+                    {/* Course details */}
+                    <div className='flex-1 group-hover:brightness-150 '>
                       <span className='font-medium text-text'>
                         {course.title}
                       </span>
-                      <p className='text-sm text-secondary'>
+                      <p className='text-sm text-secondary '>
                         {course.startDate} - {course.endDate}
                       </p>
                     </div>
-                    <span className='ml-auto text-secondary'>
-                      {course.points} points
+                    <span className='ml-auto text-secondary brightness-125 group-hover:brightness-200'>
+                      {course.points} p
                     </span>
                   </li>
                 ))}

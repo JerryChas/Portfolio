@@ -4,14 +4,14 @@ import AllSkills from '../../components/AllSkills';
 const HomePage = () => {
   return (
     <>
-      <div className='flex flex-col place-content-evenly h-full'>
-        <div className='shadow-gray-900 mx-auto px-4 py-8 rounded-lg w-full'>
-          <div className='flex md:flex-row flex-col items-center'>
-            <div className='mb-2 md:mb-0 md:w-1/2'>
+      <div className='flex flex-col h-full place-content-evenly'>
+        <div className='w-full px-4 py-8 mx-auto rounded-lg shadow-gray-900'>
+          <div className='flex flex-col items-center justify-center md:flex-row'>
+            <div className='mb-2 mr-1 md:mb-0 md:w-1/3'>
               <img
                 src={profilePic}
                 alt='Picture of me'
-                className='mx-auto rounded-full w-64 h-64 object-cover'
+                className='object-cover w-64 h-64 mx-auto rounded-full'
               />
             </div>
             <div className='md:w-1/2'>

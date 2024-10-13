@@ -1,7 +1,7 @@
 [
   {
     "title": "This Portfolio",
-    "description": "Yes, you're already here! This is the very portfolio you're browsing right now. A meta-project built with React and Tailwind, showcasing my other projects",
+    "description": "Yes, you're already here! This portfolio you're exploring is a project in itself, built with React and Tailwind, and it's designed to showcase some of my other work.",
     "src": "project-images/this_portfolio.jpeg",
     "alt": "Portfolio",
     "repoURL": "https://github.com/JerryChas/Portfolio",
